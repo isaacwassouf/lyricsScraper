@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lyrics Scraper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    {%load static%}
+    <link rel="stylesheet" type="text/css" href="{% static 'lyrics/main.css' %}" />
+
+</head> 
+<body>
+    <div id="container">
+        <header>
+            <nav>
+                <h3>Lyrics Scraper</h3>
+            </nav>
+        </header>
+
+        {% block main %}
+            <!-- Content goes here -->
+        {%endblock%}
+
+        <footer>
+            <p>made with &hearts;</p>
+        </footer>
+    </div>
+</body>
+</html>

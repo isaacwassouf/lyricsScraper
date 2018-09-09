@@ -1,0 +1,16 @@
+{% extends "lyrics/base.html" %}
+
+{% block main%}
+
+    <div id="main">
+        <h1>Type in the Name of the Artist and Song</h1>
+        
+        <form action="done" method="GET">
+            <input type="text" name="artist" placeholder="Artist name"><br>
+            <input type="text" name="song" placeholder="Song Name">
+            <input type="submit" value="Go">
+        </form>
+
+    </div>
+
+{% endblock %}
