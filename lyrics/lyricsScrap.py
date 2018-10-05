@@ -13,7 +13,7 @@ def get_lyrics(artist,song):
         if (soup.find(class_='feat') is None):
             lyrics_div = soup.find(class_='ringtone').find_next_sibling().find_next_sibling().find_next_sibling().find_next_sibling()
         else:
-            lyrics_div= lyrics_div = soup.find(class_='feat').find_next_sibling().find_next_sibling().find_next_sibling()
+            lyrics_div= soup.find(class_='feat').find_next_sibling().find_next_sibling().find_next_sibling()
         
         for element in lyrics_div(text=lambda text: isinstance(text, Comment)):
             element.extract()
